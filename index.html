@@ -3,152 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Teko:wght@400;700&display=swap" rel="stylesheet">
-    
+
+    <!-- Content Security Policy: everything is served from this site, nothing from third parties -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- SEO & link previews -->
+    <title>Marica D'Alfonso</title>
+    <meta name="description" content="Marica D'Alfonso — AI Engineer with an MSc in Cybersecurity from the University of Salerno. Skills, CV and contacts.">
+    <meta name="author" content="Marica D'Alfonso">
+    <link rel="canonical" href="https://dama29a.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Marica D'Alfonso">
+    <meta property="og:description" content="AI Engineer with an MSc in Cybersecurity from the University of Salerno.">
+    <meta property="og:url" content="https://dama29a.github.io/">
+    <meta property="og:image" content="https://dama29a.github.io/images/avatar.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="theme-color" content="#05010a">
+
+    <link rel="preload" href="./fonts/teko-latin.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="./fonts/share-tech-mono-latin.woff" as="font" type="font/woff" crossorigin>
     <link rel="stylesheet" href="./css/style.css">
-    <title>// Marca D'Alfonso //</title>
     <link rel="icon" type="image/png" href="./images/ico.png">
 </head>
-<body class="body-preload"> 
-    <canvas id="wireframe-grid"></canvas>
-    <div class="container-lg site-container">
-        <!-- HEADER -->
-        <header class="row g-1">
-            <div class="col-12">
-                <div class="panel-brutalist panel-hero">
-                    <div class="header-content">
-                        <img src="./images/avatar.png" alt="Mario Rossi Avatar" class="avatar-img"> 
-                        <div class="header-text">
-                            <h1 data-text="MARICA D'ALFONSO">MARICA D'ALFONSO</h1>
-                            <h2>CYBERSECURITY MSC. STUDENT</h2>
-                        </div>
-                    </div>
-                    <div class="header-ui">
-                        <span>[STATUS: <span class="axc">ONLINE</span>]</span>
-                        <span>[REALITY_CHECK: <span class="axc">PASSED</span>]</span>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!--  -->
-        <main>
-            <div class="row g-1 mb-1">
-                <section class="col-12">
-                    <div class="panel-brutalist">
-                        <h3>// ABOUT ME</h3>
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <p>
-                                    I'm Marica D'Alfonso, a Master's student at the University of Salerno (Università degli studi di Salerno), where I am specializing in the Cybersecurity curriculum.
-                                    <br><br>My passion for technology has been a driving force since I was young, evolving into a professional approach defined by creativity, a competitive spirit, and a sharp eye for detail. 
-                                </p>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="status-box">
-                                    <h4><i class="bi bi-broadcast"></i> STATUS</h4>
-                                    <span class="status-indicator actively-seeking"></span> ACTIVELY SEEKING
-                                </div>
-                                <div class="status-box">
-                                    <h4><i class="bi bi-geo-alt-fill"></i> BASED IN</h4>
-                                    ITALY
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
+<body class="body-preload">
 
-
-            <div class="row g-1">
-                <!-- SKILLS -->
-                <section class="col-lg-7 col-md-12">
-                    <div class="panel-brutalist panel-skills">
-                        <h3>// SKILLS_MATRIX</h3>
-                        <div class="skills-grid">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6">
-                                    <h4>LANGUAGES</h4>
-                                    <ul>
-                                        <li>Python</li>
-                                        <li>Java</li>
-                                        <li>JavaScript</li>
-                                        <li>C</li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <h4>DB</h4>
-                                    <ul>
-                                        <li>PostgreSQL</li>
-                                        <li>MySQL</li>
-                                        <li>MongoDB</li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <h4>WEB & FRAMEWORKS</h4>
-                                    <ul>
-                                        <li>HTML5</li>
-                                        <li>CSS & SASS</li>
-                                        <li>Bootstrap</li>
-                                        <li>React.js & React Native</li>
-                                        <li>Node.js</li>
-                                        <li>Django</li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <h4>OPERATING SYSTEMS</h4>
-                                    <ul>
-                                        <li>Linux</li>
-                                        <li>Windows</li>
-                                        <li>Android</li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <h4>VERSION CONTROL</h4>
-                                    <ul>
-                                        <li>Git</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- CONTACT ME -->
-                <section class="col-lg-5 col-md-12">
-                    <div class="panel-brutalist panel-contact">
-                        <h3>// ESTABLISH_CONNECTION</h3>
-                        <p>Send me a signal. I'll be listening.</p>
-                        <div class="links">
-                            <a class="cta-link">
-                                <i class="bi bi-envelope-fill"></i> 
-                                <span style="font-size: smaller;">[ maricadalfonso@gmail.com ]</span>
-                            </a>
-                            <a href="https://github.com/DaMa29A" target="_blank" class="cta-link"><i class="bi bi-github"></i> [ DaMa29A ]</a>
-                            <a href="https://www.linkedin.com/in/marica-d-alfonso/" target="_blank" class="cta-link"><i class="bi bi-linkedin"></i> [ marica d'alfonso ]</a>
-                        </div>
-                    </div>
-                </section>
-            </div>
-
-            <!-- FOOTER -->
-            <div class="row g-1 mb-1">
-                <section class="col-12">
-                    <div class="panel-brutalist d-flex justify-content-center align-items-center" style="padding:0; border: 0; box-shadow:none; transition: none;">   
-                        <span class="shade">© 2025 Marica D'Alfonso - Made with &hearts; </span>
-                    </div>
-                </section>
-            </div>
-            <!--  -->
-        </main>
+    <!-- Animated background: glowing orbs drifting around + static perspective grid -->
+    <div class="bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <div class="orb orb-5"></div>
+        <div class="grid-floor"></div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
-    <script src="./script/app.js"></script>
+    <div class="wrap">
+
+        <!-- NAV -->
+        <nav class="topnav" aria-label="Main">
+            <a href="#home" class="logo">MD<span>://</span></a>
+            <ul>
+                <li><a href="#home" class="active"><b>01</b> HOME</a></li>
+                <li><a href="#about"><b>02</b> ABOUT</a></li>
+                <li><a href="#experience"><b>03</b> EXPERIENCE</a></li>
+                <li><a href="#skills"><b>04</b> SKILLS</a></li>
+                <li><a href="#contact"><b>05</b> CONTACT</a></li>
+            </ul>
+            <div class="scroll-progress" aria-hidden="true"><i></i></div>
+        </nav>
+
+        <main>
+            <!-- HERO -->
+            <header class="panel hero" id="home">
+                <div class="avatar">
+                    <div class="avatar-ring"></div>
+                    <img src="./images/avatar.png" alt="Marica D'Alfonso" width="240" height="240">
+                    <div class="avatar-tag">ID_0x29A</div>
+                </div>
+
+                <div class="hero-main">
+                    <h1>MARICA<br>D'ALFONSO</h1>
+                    <div class="role">AI ENGINEER<span class="cursor" aria-hidden="true"></span></div>
+                    <div class="cta">
+                        <!-- CV file: file/cv.pdf -->
+                        <a href="./file/cv.pdf" download="Marica_DAlfonso_CV.pdf" class="btn btn-fill">
+                            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg> DOWNLOAD_CV
+                        </a>
+                        <a href="#contact" class="btn">&gt; CONTACT_ME</a>
+                    </div>
+                </div>
+
+                <aside class="hud" aria-label="Info">
+                    <h2 class="hud-title">// SYS_INFO</h2>
+                    <!-- STATUS SWITCH
+                         Change data-status on the div below:
+                           data-status="open"   -> green dot + "ACTIVELY SEEKING"
+                           data-status="closed" -> red dot   + "NOT SEEKING"
+                         Texts and colors are CSS variables in css/style.css (:root, "STATUS SWITCH"). -->
+                    <div class="kv status" data-status="closed">STATUS <b><span class="dot" aria-hidden="true"></span><span class="status-text"></span></b></div>
+                    <div class="kv">ROLE <b>AI Engineer</b></div>
+                    <!-- TODO: fictional data, replace with your real company -->
+                    <div class="kv">COMPANY <b>Sprint Reply</b></div>
+                    <div class="kv">DEGREE <b>MSc · UNISA</b></div>
+                    <div class="kv">BASED IN <b>Italy</b></div>
+                    <div class="kv">LANG <b>IT · EN</b></div>
+                </aside>
+            </header>
+
+            <!-- KEY NUMBERS
+                 TODO: fictional data, replace with your real numbers.
+                 The bar width is set with the classes w-25 / w-40 / w-55 / w-70 / w-100 -->
+            <section class="stats" aria-label="Key numbers">
+                <div class="panel stat">
+                    <div class="stat-n">110L</div>
+                    <div class="stat-l">MSc FINAL GRADE</div>
+                    <div class="bar">
+                        <i class="w-100"></i>
+                    </div>
+                </div>
+                <div class="panel stat"><div class="stat-n">1</div><div class="stat-l">YEARS IN AI</div><div class="bar"><i class="w-55"></i></div></div>
+            </section>
+
+            <!-- ABOUT + TERMINAL -->
+            <div class="cols cols-about">
+                <section class="panel" id="about">
+                    <h2 class="ptitle">// ABOUT_ME <small>02</small></h2>
+                    <p>
+                        I'm Marica D'Alfonso, an <b>AI Engineer</b>. I hold a Master's degree from the University of Salerno (Università degli Studi di Salerno), where I specialized in the <b>Cybersecurity</b> curriculum.
+                    </p>
+                    <p>
+                        My passion for technology has been a driving force since I was young, evolving into a professional approach defined by creativity, a competitive spirit, and a sharp eye for detail.
+                    </p>
+                </section>
+
+                <!-- TODO: the "[OK] building at ..." line uses fictional data -->
+                <div class="terminal" aria-label="Terminal">
+                    <div class="term-bar"><i></i><i></i><i></i><span>marica@portfolio:~</span></div>
+<pre><span class="p">$</span> whoami
+<span class="c">marica_dalfonso</span> — AI Engineer
+<span class="p">$</span> cat focus.txt
+→ LLM applications &amp; RAG
+→ AI &amp; Web security
+<span class="p">$</span> ./status --now
+<span class="g">[OK]</span> ...
+<span class="p">$</span> <span class="c blink">█</span></pre>
+                </div>
+            </div>
+
+            <!-- EXPERIENCE + SKILLS -->
+            <div class="cols cols-half">
+                <section class="panel" id="experience">
+                    <h2 class="ptitle">// EXPERIENCE_LOG <small>03</small></h2>
+                    <!-- TODO: fictional data, replace with your real experience.
+                         Add class "now" to the current position (filled magenta diamond). -->
+                    <div class="timeline">
+                        <div class="ev now">
+                            <div class="ev-date">2026 — NOW</div>
+                            <h3>AI ENGINEER <span>@ Sprint Reply</span></h3>
+                            <p>Designing and building LLM-powered systems: RAG pipelines, prompt engineering and AI agents.</p>
+                        </div>
+                        <div class="ev">
+                            <div class="ev-date">2023 — 2026</div>
+                            <h3>MSc COMPUTER SCIENCE <span>@ UNISA</span></h3>
+                            <p>- Cybersecurity curriculum
+                                <br>- Thesis on "Ai-Driven Dynamic Protocol Mutation for Firewall Evasion"
+                                <br>- 110 cum laude</p>
+                        </div>
+                        <div class="ev">
+                            <div class="ev-date">2019 — 2023</div>
+                            <h3>BSc COMPUTER SCIENCE <span>@ UNISA</span></h3>
+                            <p>- 101/110</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="panel" id="skills">
+                    <h2 class="ptitle">// SKILLS_MATRIX <small>04</small></h2>
+                    <div class="skills">
+                        <div class="sk">
+                            <h3>ARTIFICIAL INTELLIGENCE</h3>
+                            <div class="tags"><span>LLM &amp; Prompt Engineering</span><span>Pandas</span></div>
+                        </div>
+                        <div class="sk">
+                            <h3>CYBERSECURITY</h3>
+                            <div class="tags"><span>Kali Linux</span><span>Wireshark</span><span>Nmap</span><span>Burp Suite</span><span>OWASP Top 10</span></div>
+                        </div>
+                        <div class="sk">
+                            <h3>LANGUAGES</h3>
+                            <div class="tags"><span>Python</span><span>Java</span><span>JavaScript</span><span>C</span></div>
+                        </div>
+                        <div class="sk">
+                            <h3>DATABASE</h3>
+                            <div class="tags"><span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span></div>
+                        </div>
+                        <div class="sk sk-wide">
+                            <h3>WEB, FRAMEWORKS &amp; DESIGN</h3>
+                            <div class="tags"><span>HTML</span><span>CSS</span><span>React.js</span><span>React Native</span><span>Bootstrap</span><span>Django</span><span>Node.js</span><span>Figma</span></div>
+                        </div>
+                        <div class="sk">
+                            <h3>OPERATING SYSTEMS</h3>
+                            <div class="tags"><span>Linux</span><span>Windows</span><span>Android</span></div>
+                        </div>
+                        <div class="sk">
+                            <h3>VERSION CONTROL</h3>
+                            <div class="tags"><span>Git</span></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- CONTACT -->
+            <section class="panel contact" id="contact">
+                <div class="contact-intro">
+                    <h2 class="ptitle">// ESTABLISH_CONNECTION <small>05</small></h2>
+                    <p class="signal">Send me a signal.<br><span>I'll be listening.</span></p>
+                </div>
+                <div class="links">
+                    <a href="mailto:d.marica02@gmail.com" class="lk">
+                        <span class="lk-name"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3zM3 6l9 7 9-7"/></svg> EMAIL</span>
+                        <span class="lk-val">d.marica02@gmail.com</span>
+                    </a>
+                    <a href="https://github.com/DaMa29A" target="_blank" rel="noopener noreferrer" class="lk">
+                        <span class="lk-name"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg> GITHUB</span>
+                        <span class="lk-val">DaMa29A</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/marica-d-alfonso/" target="_blank" rel="noopener noreferrer" class="lk">
+                        <span class="lk-name"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16v12H4zM9 8V5h6v3M4 13h16"/></svg> LINKEDIN</span>
+                        <span class="lk-val">Marica D'Alfonso</span>
+                    </a>
+                    <a href="./file/cv.pdf" download="Marica_DAlfonso_CV.pdf" class="lk lk-cv">
+                        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg> DOWNLOAD_CV.PDF
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">© <span id="year">2026</span> MARICA D'ALFONSO · SYS.VER 2.0 · MADE WITH ♥</footer>
+    </div>
+
+    <!-- Back to top: appears after scrolling down -->
+    <a href="#home" class="to-top" aria-label="Back to top">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V5m0 0l-6 6m6-6l6 6"/></svg>
+    </a>
+
+    <script src="./script/app.js" defer></script>
 </body>
 </html>
